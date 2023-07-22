@@ -1,5 +1,7 @@
 /// @description Update
 
+depth = - y - cameraHeight;
+
 if windowIsUpdate(){	//	Update Window
 	windowWidth = window_get_width();
 	windowHeight = window_get_height();

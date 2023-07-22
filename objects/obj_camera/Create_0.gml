@@ -1,15 +1,14 @@
 /// @description Setup
 
 viewIndex = 0;
+vignette = true;
 
 //	Camera
-x = 0;
-y = 0;
 xx = x;
 yy = y;
 cameraWidth = 0;
 cameraHeight = 0;
-cameraRoomBorder = 32;
+cameraRoomBorder = 0;
 cameraZoom = 1;
 cameraDefW = 360;
 cameraBounding = true;
@@ -34,4 +33,3 @@ function cameraSetTarget(_x, _y){
 	xx = cameraBounding ? clamp(_x, (cameraWidth * .5) + cameraRoomBorder, (room_width - (cameraWidth * .5)) - cameraRoomBorder) : _x;
 	yy = cameraBounding ? clamp(_y, (cameraHeight * .5) + cameraRoomBorder, (room_height - (cameraHeight * .5)) - cameraRoomBorder) : _y;
 }
-
