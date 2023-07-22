@@ -17,7 +17,7 @@ if windowIsUpdate(){	//	Update Window
 		surface_resize(application_surface, cameraWidth, cameraHeight);
 	}
 		
-	display_set_gui_size(windowWidth, windowHeight);
+	display_set_gui_size(cameraWidth, cameraHeight);
 }
 
 //	Update Camera

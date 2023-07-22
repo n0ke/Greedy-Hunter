@@ -8,3 +8,5 @@ dir = {x: 0, y: 0}
 weapon = instance_create_layer(x, y, "Instances", obj_weapon);
 
 lado = 1;
+
+inventario_val = 0;

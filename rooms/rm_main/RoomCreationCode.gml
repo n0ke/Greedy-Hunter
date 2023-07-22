@@ -1,0 +1,1 @@
+global.modo_inventario = false;

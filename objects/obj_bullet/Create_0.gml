@@ -1,2 +1,1 @@
-trail = array_create(3, {x: x, y: y});
-kill = false;
+trail = array_create(4, {x: x, y: y});
