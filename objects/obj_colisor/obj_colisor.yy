@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Gameplay",
-    "path": "folders/Code/Gameplay.yy",
+    "name": "Collision",
+    "path": "folders/Code/Collision.yy",
   },
   "parentObjectId": null,
   "persistent": false,

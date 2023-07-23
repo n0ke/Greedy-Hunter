@@ -33,8 +33,8 @@
   "nineSlice": null,
   "origin": 4,
   "parent": {
-    "name": "vfxvfx",
-    "path": "folders/vfxvfx.yy",
+    "name": "VFX",
+    "path": "folders/Asset/Sprites/VFX.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

@@ -37,7 +37,7 @@
   "origin": 9,
   "parent": {
     "name": "Personagens",
-    "path": "folders/Sprites/Personagens.yy",
+    "path": "folders/Asset/Sprites/Personagens.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

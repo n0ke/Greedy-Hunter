@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "spr_player",
   "bbox_bottom": 63,
-  "bbox_left": 25,
-  "bbox_right": 38,
+  "bbox_left": 23,
+  "bbox_right": 40,
   "bbox_top": 55,
   "bboxMode": 2,
   "collisionKind": 1,
@@ -31,8 +31,8 @@
   "nineSlice": null,
   "origin": 7,
   "parent": {
-    "name": "Asset",
-    "path": "folders/Asset.yy",
+    "name": "Personagens",
+    "path": "folders/Asset/Sprites/Personagens.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

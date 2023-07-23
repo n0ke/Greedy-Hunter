@@ -15,12 +15,14 @@ if windowIsUpdate(){	//	Update Window
 	view_set_wport(viewIndex, windowWidth);
 	view_set_hport(viewIndex, windowHeight);
 	
+	display_set_gui_size(cameraWidth, cameraHeight);
+	
 	if (!is_infinity(cameraWidth) or !is_infinity(cameraHeight)) and ((cameraWidth > 16) or (cameraHeight > 9)){
 		surface_resize(application_surface, cameraWidth, cameraHeight);
 	}
-		
-	display_set_gui_size(cameraWidth, cameraHeight);
+	
 }
+
 
 //	Update Camera
 cameraShake = lerp(cameraShake, 0, .07);
@@ -35,3 +37,5 @@ var _xsh = lengthdir_x(cameraShake * .1, cameraShakePhase),
 	_ysh = lengthdir_y(cameraShake * .1, cameraShakePhase);
 
 camera_set_view_pos(view_camera[viewIndex], floor(x - _halfWidth + _xsh), floor(y - _halfHeight + _ysh));
+
+vignette_color = merge_color(vignette_color, #000000, .1);

@@ -19,3 +19,8 @@ cooldown_hit = 0;
 cooldown_hit_max = 40;
 tomei_hit = false;
 tempo_flash = 0;
+
+xscale = 1;
+yscale = 1;
+
+inventario = [];

@@ -14,7 +14,7 @@ var _angle = point_direction(0, 0, dir.x, dir.y);
 
 obj_camera.cameraSetTarget(x, y);
 
-lado = sign(x - mouse_x) != 0 ? -sign(x - mouse_x) : image_xscale;
+lado = sign(x - mouse_x) != 0 ? -sign(x - mouse_x) : lado;
 
 //	Movimento
 spd.x = lerp(spd.x, lengthdir_x(WALK_SPEED * (dir.x != 0), _angle), ACC);
@@ -28,8 +28,8 @@ move_and_collide(spd.x, spd.y, obj_colisor);
 
 if(tempo_flash > 0)
 {
-	if(random(2) < 1){xscale = .8 * lado; yscale = 1.2}
-	else {xscale = 1.2 * lado; yscale = .8;}
+	if(random(2) < 1){xscale = .8; yscale = 1.2}
+	else {xscale = 1.2; yscale = .8;}
 	
 	tempo_flash--;
 	tomei_hit = true;
@@ -42,5 +42,5 @@ cooldown_hit--;
 
 #endregion
 
-image_xscale = lerp(image_xscale, sign(lado), .15);
-image_yscale = lerp(image_yscale, 1, .15);
+xscale = lerp(xscale, 1, .15);
+yscale = lerp(yscale, 1, .15);

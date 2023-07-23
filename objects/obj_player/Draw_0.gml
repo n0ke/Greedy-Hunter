@@ -3,8 +3,8 @@ draw_sprite_ext(
 	image_index,
 	x,
 	y,
-	lado,
-	image_yscale,
+	xscale * lado,
+	yscale,
 	image_angle,
 	image_blend,
 	image_alpha

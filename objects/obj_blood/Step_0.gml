@@ -23,7 +23,7 @@ if (!surface_exists(global.surface_blood))
 	{
 		surface_set_target(global.surface_blood);
 		surface_depth_disable(true)
-		draw_sprite_ext(sanguinhos,0,x,y,image_xscale,image_yscale,image_angle,c_white,.6)
+		draw_sprite_ext(spr_sanguinhos,0,x,y,image_xscale,image_yscale,image_angle,c_white,.6)
 		surface_reset_target();
 	}	
 }

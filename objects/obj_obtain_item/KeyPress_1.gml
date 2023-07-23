@@ -1,0 +1,1 @@
+if paused instance_destroy();

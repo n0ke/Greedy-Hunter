@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "VFX",
-    "path": "folders/Sprites/VFX.yy",
+    "path": "folders/Asset/Sprites/VFX.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

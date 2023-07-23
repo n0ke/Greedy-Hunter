@@ -15,5 +15,6 @@ with(other)
 		//global.shake = 3;
 	}
 }
-
+audio_play_sound(snd_hit_player, 0, 0, , , 1 + random_amp(.2));
+obj_camera.vignette_color = #ff0000;
 instance_destroy();

@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Sangue",
-    "path": "folders/Objects/Inimigo/Sangue.yy",
+    "name": "Misc",
+    "path": "folders/Code/Misc.yy",
   },
   "parentObjectId": null,
   "persistent": false,

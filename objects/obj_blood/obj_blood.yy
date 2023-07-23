@@ -12,8 +12,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Sangue",
-    "path": "folders/Objects/Inimigo/Sangue.yy",
+    "name": "Misc",
+    "path": "folders/Code/Misc.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sanguinhos",
-    "path": "sprites/sanguinhos/sanguinhos.yy",
+    "name": "spr_sanguinhos",
+    "path": "sprites/spr_sanguinhos/spr_sanguinhos.yy",
   },
   "spriteMaskId": null,
   "visible": true,

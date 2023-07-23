@@ -29,7 +29,7 @@
   "origin": 9,
   "parent": {
     "name": "Robo Atirador",
-    "path": "folders/Sprites/Inimigos/Robo Atirador.yy",
+    "path": "folders/Asset/Sprites/Inimigos/Robo Atirador.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

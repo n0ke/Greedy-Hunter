@@ -32,8 +32,8 @@
   "nineSlice": null,
   "origin": 9,
   "parent": {
-    "name": "Greedy Hunter",
-    "path": "Greedy Hunter.yyp",
+    "name": "VFX",
+    "path": "folders/Asset/Sprites/VFX.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
