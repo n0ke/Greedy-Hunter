@@ -61,8 +61,18 @@ if(step)
 	
 	
 	//Morrendo
-	if(vida <= 0) instance_destroy();
+	if(vida <= 0) 
+	{
+		repeat(20)
+		{
+			var blood = instance_create_layer(x,y,"Vacuo",obj_blood)
+			
+		}	
+			
+		instance_destroy();
+	}
 	
+	//Arruma isso aqui
 	collision(obj_colisor);
 	collision(obj_vacuo);
 }

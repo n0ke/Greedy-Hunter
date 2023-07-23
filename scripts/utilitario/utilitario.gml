@@ -61,3 +61,17 @@ function collision(obj)
 //	Color Cycle
 	//	Dado os parametros a função retorna uma cor que altera a matriz de acordo com a frequência, criando um efeito "arco iris", é veloz pois usa bitwise
 	function color_cycle(frequency, phase, saturation, value){ return make_color_hsv((current_time * (frequency * 0.0255) + phase) & 255, saturation, value) };
+	
+function sleep()
+{
+var t = current_time + argument0;
+while (current_time < t) {};
+}
+
+//    Progress Bar
+//    Dado as dimensões, cor e progresso, a função desenha uma barra de progresso
+function progress_bar(_x, _y, width, height, outline_width, outline_color, bg_color, progress_color, progress){
+draw_rectangle_color(_x, _y, _x + width, _y + height, outline_color, outline_color, outline_color, outline_color, false);
+draw_rectangle_color(_x + outline_width, _y + outline_width, _x + width - outline_width, _y + height - outline_width, bg_color, bg_color, bg_color, bg_color, false);
+if (progress > 0) draw_rectangle_color(_x + outline_width, _y + outline_width, _x + floor(progress * (width - outline_width - 1)) + 1, _y + height - outline_width, progress_color, progress_color, progress_color, progress_color, false);
+}

@@ -23,3 +23,24 @@ spd.y = lerp(spd.y, lengthdir_y(WALK_SPEED * (dir.y != 0), _angle), ACC);
 move_and_collide(spd.x, spd.y, obj_colisor);
 
 //	Inventario
+
+#region HitFlash
+
+if(tempo_flash > 0)
+{
+	if(random(2) < 1){xscale = .8 * lado; yscale = 1.2}
+	else {xscale = 1.2 * lado; yscale = .8;}
+	
+	tempo_flash--;
+	tomei_hit = true;
+}
+else
+{
+	tomei_hit = false;	
+}
+cooldown_hit--;
+
+#endregion
+
+image_xscale = lerp(image_xscale, sign(lado), .15);
+image_yscale = lerp(image_yscale, 1, .15);

@@ -1,8 +1,8 @@
 
 event_inherited();
 
-vida = 80;
-vida_max = 80;
+vida = 20;
+vida_max = 20;
 
 vel = .8;
 spr_idle = spr_robo_atirador_idle;

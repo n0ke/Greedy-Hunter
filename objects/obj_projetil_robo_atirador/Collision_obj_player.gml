@@ -1,4 +1,4 @@
-/*with(other)
+with(other)
 {
 	if(cooldown_hit <= 0)
 	{
@@ -9,9 +9,10 @@
 		
 		tempo_flash = 2;
 		tomei_hit = true;
-		red_screen_alpha = .4;
+		//TODO a tela piscar na vinheta vermelho indicando que tomou dano
+		//red_screen_alpha = .4;
 		
-		global.shake = 3;
+		//global.shake = 3;
 	}
 }
 

@@ -45,7 +45,7 @@ tomei_hit = false;
 
 corpo_a_corpo = false;
 
-iniciar_ia = room_speed*2;
+iniciar_ia = room_speed;
 step = false;
 
 escudo = false;

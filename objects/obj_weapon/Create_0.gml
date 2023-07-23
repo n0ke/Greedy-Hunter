@@ -15,16 +15,17 @@ function weapon(_nome, _recoil, _dmg, _cadencia, _projetil, _length, _sprite, _a
 	
 }
 
-shotgun = new weapon("Shotgun", 10, 8, 8, obj_bullet, 2, spr_weapon, 8, .02,2);
+shotgun = new weapon("Shotgun", 10, 8, 7, obj_bullet, 2, spr_weapon, 40, 2,2);
 
 arma_ativa = 
 {
 		
 }
-
+recarregando = false
+progress_recarga = 0;
 cooldown = 0;
 recoil = 0
-
+ammo = 40
 switch(global.arma_selecionada)
 {
 	case "Pistola":

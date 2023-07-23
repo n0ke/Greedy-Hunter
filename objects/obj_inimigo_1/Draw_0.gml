@@ -22,9 +22,10 @@ if(!tomei_hit)
 }
 else
 {
-	
+	gpu_set_fog(1,c_white,1,0)
 	draw_sprite_ext(gun_sprite, image_index, _x, _y, gun_xscale, gun_yscale, gun_angle, -1, 1);
 	draw_sprite_ext(sprite_index, image_index, x, y, xscale, yscale, angle, -1, 1);
+	gpu_set_fog(0,c_white,0,1)
 
 }
 
