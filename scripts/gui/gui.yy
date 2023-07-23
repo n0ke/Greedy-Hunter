@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "globalvars",
+  "name": "gui",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

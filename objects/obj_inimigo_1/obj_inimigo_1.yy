@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Code",
-    "path": "folders/Code.yy",
+    "name": "Gameplay",
+    "path": "folders/Code/Gameplay.yy",
   },
   "parentObjectId": {
     "name": "obj_inimigo_pai",

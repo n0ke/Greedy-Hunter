@@ -56,3 +56,8 @@ function collision(obj)
 		velv = 0;
 	}
 }
+
+
+//	Color Cycle
+	//	Dado os parametros a função retorna uma cor que altera a matriz de acordo com a frequência, criando um efeito "arco iris", é veloz pois usa bitwise
+	function color_cycle(frequency, phase, saturation, value){ return make_color_hsv((current_time * (frequency * 0.0255) + phase) & 255, saturation, value) };

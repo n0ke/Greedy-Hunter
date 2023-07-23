@@ -23,4 +23,3 @@ spd.y = lerp(spd.y, lengthdir_y(WALK_SPEED * (dir.y != 0), _angle), ACC);
 move_and_collide(spd.x, spd.y, obj_colisor);
 
 //	Inventario
-inventario_val = lerp(inventario_val, global.modo_inventario, .33);
