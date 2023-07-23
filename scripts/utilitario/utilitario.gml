@@ -30,3 +30,29 @@ function spark(_x, _y, spd, dir, spread, amount, _decay, color1, color2, width_r
 		)
 	}
 }
+
+function collision(obj)
+{
+	var _velh = sign(velh);
+	var _velv = sign(velv);
+	
+	//Colisão Horizontal
+	if(place_meeting(x + velh, y, obj))
+	{
+		while(!place_meeting(x + _velh, y, obj))
+		{
+			x += _velh;	
+		}
+		velh = 0;
+	}
+	
+	//Colisão Vertical
+	if(place_meeting(x, y + velv, obj))
+	{
+		while(!place_meeting(x, y + _velv, obj))
+		{
+			y += _velv;	
+		}
+		velv = 0;
+	}
+}
