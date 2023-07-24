@@ -102,7 +102,7 @@ function draw_shadow(argument0, argument1, argument2) {
 	var rx = argument2;
 	var ry = rx / 2;
 	draw_set_color(c_black);
-	draw_set_alpha(0.7);
+	draw_set_alpha(0.5);
 	draw_ellipse(_x - rx, _y - ry, _x + rx, _y + ry, false);
 	draw_set_color(c_white);
 	draw_set_alpha(1.0);
@@ -110,3 +110,5 @@ function draw_shadow(argument0, argument1, argument2) {
 
 
 }
+	
+function elastic(value, value_speed, target, transition_speed, tension){ return lerp(value_speed, (target - value) * transition_speed, tension) };

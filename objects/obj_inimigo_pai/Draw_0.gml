@@ -3,7 +3,7 @@
 //draw_line(x, y, obj_player.x, obj_player.y);
 
 shader_set(shd_tile_shadow);
-draw_sprite_ext(sprite_index, image_index, x, bbox_bottom, xscale, -.6, 0, -1, .3);
+draw_sprite_ext(sprite_index, image_index, x, bbox_bottom, xscale, -.6, 0, -1, .5);
 shader_reset();
 
 if(!tomei_hit)

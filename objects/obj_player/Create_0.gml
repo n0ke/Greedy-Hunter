@@ -13,6 +13,8 @@ inventario_val = 0;
 
 obj_camera.cameraSetPos(x, y);
 
+
+
 vida = 6
 vida_max = 6;
 cooldown_hit = 0;
@@ -24,3 +26,6 @@ xscale = 1;
 yscale = 1;
 
 inventario = [];
+
+pony_r = 0;
+pony_spd = 0;

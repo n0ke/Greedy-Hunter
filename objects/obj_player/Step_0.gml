@@ -5,9 +5,11 @@ global.modo_inventario = keyboard_check_pressed(vk_tab) ? !global.modo_inventari
 
 var _spd_real = point_distance(x,y,x+spd.x,y+spd.y)
 
+
+
 if (_spd_real > .5 )
 {
-	sprite_index = spr_player_walking
+	/*if ((y - mouse_y) <= 0)*/ sprite_index = spr_player_fwd_walking;
 	
 	if (random(4) < 1)
 	{
@@ -16,7 +18,8 @@ if (_spd_real > .5 )
 }
 else
 {
-	sprite_index = spr_player	
+	if ((y - mouse_y) <= 0) sprite_index = spr_player_fwd;
+	else sprite_index = spr_player_back;
 }
 if !global.modo_inventario{
 	dir.x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
@@ -60,4 +63,7 @@ cooldown_hit--;
 xscale = lerp(xscale, 1, .15);
 yscale = lerp(yscale, 1, .15);
 image_alpha = clamp(image_alpha,.5,1)
-if (cooldown_hit > 0) image_alpha = sin(get_timer()/10000) else image_alpha = 1 
+if (cooldown_hit > 0) image_alpha = sin(get_timer()/10000) else image_alpha = 1
+
+pony_spd = elastic(pony_r, pony_spd, (spd.x - spd.y * lado) * 5, .75, .066);
+pony_r += pony_spd;
