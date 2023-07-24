@@ -60,8 +60,28 @@ function collision(obj)
 
 //	Color Cycle
 	//	Dado os parametros a função retorna uma cor que altera a matriz de acordo com a frequência, criando um efeito "arco iris", é veloz pois usa bitwise
-	function color_cycle(frequency, phase, saturation, value){ return make_color_hsv((current_time * (frequency * 0.0255) + phase) & 255, saturation, value) };
-	
+function color_cycle(frequency, phase, saturation, value){ return make_color_hsv((current_time * (frequency * 0.0255) + phase) & 255, saturation, value) };
+
+function draw_outline(_x, _y, _string, _xscale = 1, _yscale = 1, _angle,_out ,c1 = c_white,c2 = c_white,c3 = c_white,c4 = c_white){
+
+draw_set_color($000000);
+
+draw_text_transformed(_x + _out, _y, _string, _xscale, _yscale, _angle);
+draw_text_transformed(_x, _y + _out, _string, _xscale, _yscale, _angle);
+draw_text_transformed(_x - _out, _y, _string, _xscale, _yscale, _angle);
+draw_text_transformed(_x, _y - _out, _string, _xscale, _yscale, _angle);
+
+draw_text_transformed(_x + _out, _y + _out, _string, _xscale, _yscale, _angle);
+draw_text_transformed(_x - _out, _y + _out, _string, _xscale, _yscale, _angle);
+draw_text_transformed(_x - _out, _y - _out, _string, _xscale, _yscale, _angle);
+draw_text_transformed(_x + _out, _y - _out, _string, _xscale, _yscale, _angle);
+
+//draw_set_color(c_in);
+
+
+draw_text_color(_x, _y, _string,c1,c2,c3,c4,1);
+
+}
 function sleep()
 {
 var t = current_time + argument0;
@@ -74,4 +94,19 @@ function progress_bar(_x, _y, width, height, outline_width, outline_color, bg_co
 draw_rectangle_color(_x, _y, _x + width, _y + height, outline_color, outline_color, outline_color, outline_color, false);
 draw_rectangle_color(_x + outline_width, _y + outline_width, _x + width - outline_width, _y + height - outline_width, bg_color, bg_color, bg_color, bg_color, false);
 if (progress > 0) draw_rectangle_color(_x + outline_width, _y + outline_width, _x + floor(progress * (width - outline_width - 1)) + 1, _y + height - outline_width, progress_color, progress_color, progress_color, progress_color, false);
+}
+
+function draw_shadow(argument0, argument1, argument2) {
+	var _x = argument0;
+	var _y = argument1;
+	var rx = argument2;
+	var ry = rx / 2;
+	draw_set_color(c_black);
+	draw_set_alpha(0.7);
+	draw_ellipse(_x - rx, _y - ry, _x + rx, _y + ry, false);
+	draw_set_color(c_white);
+	draw_set_alpha(1.0);
+
+
+
 }

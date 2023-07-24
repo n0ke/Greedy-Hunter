@@ -48,47 +48,33 @@ draw_sprite_ext(
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_set_font(global.mini_font);
-draw_text_transformed(
-	_gui_width * .5,
+draw_set_font(fnt_geral);
+draw_outline(_gui_width * .5,
 	(_gui_height * .2) * transition_val,
-	"'Cocacola Espuma'",
-	4,
-	4,
-	0
-);
+	"'Cocacola Espumante'",
+	1,
+	1,
+	0,
+	2
+)
 
-draw_text_transformed(
-	_gui_width * .5,
-	_gui_height - (_gui_height * .25) * transition_val,
-	"Coquinha gelada hummmmm dilissa",
-	1.5,
-	1.5,
-	0
-);
+draw_outline(_gui_width * .5,_gui_height - (_gui_height * .25) * transition_val,"Coquinha gelada hummmmm dilissa",1,1,0,2)
 
 var _rainbow1 = color_cycle(5, 50, 127, 255);
 var _rainbow2 = color_cycle(5, 0, 127, 255);
-draw_text_transformed_color(
-	_gui_width * .5 + random_amp(2),
-	_gui_height - (_gui_height * .14) * transition_val + random_amp(2),
-	"R$10,00",
-	2,
-	2,
-	0,
+draw_outline(_gui_width * .5 + random_amp(2),_gui_height - (_gui_height * .14) * transition_val + random_amp(2),"Preço Médio: R$10,00",1,1,0,2,
 	_rainbow1,
 	_rainbow1,
 	_rainbow2,
-	_rainbow2,
-	1
-);
+	_rainbow2)
+
 
 draw_text_color(
 	_gui_width * .5,
 	_gui_height - (_gui_height * .05) * transition_val,
-	"pressione qualquer botao pra continuar",
-	#ffffff,
-	#ffffff,
+	"Pressione qualquer botao pra continuar",
+	c_green,
+	c_green,
 	#ffffff,
 	#ffffff,
 	abs(lengthdir_x(1, current_time * .25))

@@ -3,6 +3,21 @@ depth = -y;
 //	Input
 global.modo_inventario = keyboard_check_pressed(vk_tab) ? !global.modo_inventario : global.modo_inventario;
 
+var _spd_real = point_distance(x,y,x+spd.x,y+spd.y)
+
+if (_spd_real > .5 )
+{
+	sprite_index = spr_player_walking
+	
+	if (random(4) < 1)
+	{
+		instance_create_layer(x+random_amp(8),y+random_amp(2),"Instances",obj_dustwalk);
+	}
+}
+else
+{
+	sprite_index = spr_player	
+}
 if !global.modo_inventario{
 	dir.x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 	dir.y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
@@ -44,3 +59,5 @@ cooldown_hit--;
 
 xscale = lerp(xscale, 1, .15);
 yscale = lerp(yscale, 1, .15);
+image_alpha = clamp(image_alpha,.5,1)
+if (cooldown_hit > 0) image_alpha = sin(get_timer()/10000) else image_alpha = 1 
