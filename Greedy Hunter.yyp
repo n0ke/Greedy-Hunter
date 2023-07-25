@@ -106,8 +106,8 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
   ],
   "RoomOrderNodes": [
-    {"roomId":{"name":"rm_store","path":"rooms/rm_store/rm_store.yy",},},
     {"roomId":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},},
+    {"roomId":{"name":"rm_store","path":"rooms/rm_store/rm_store.yy",},},
     {"roomId":{"name":"rm_main_menu","path":"rooms/rm_main_menu/rm_main_menu.yy",},},
   ],
   "TextureGroups": [

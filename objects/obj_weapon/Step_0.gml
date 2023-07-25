@@ -1,16 +1,7 @@
 
-if (keyboard_check_pressed(ord("R"))) recarregando = true
 
-if (recarregando)
-{
-	progress_recarga+=arma_ativa.cdreload;
-	if (progress_recarga = 100)
-	{
-		progress_recarga = 0
-		recarregando = false
-		ammo = arma_ativa.ammo
-	}
-}
+
+
 
 var shot_key = mouse_check_button(mb_left)
 if(cooldown > 0) cooldown--;
@@ -25,10 +16,6 @@ if shot_key && cooldown <= 0 and !global.modo_inventario && ammo > 0{
 	recoil = arma_ativa.recoil
 	cooldown = arma_ativa.cadencia;
 	a.damage = arma_ativa.dmg
-	if (ammo = 0)
-	{
-		recarregando = true
-	}
 	with(obj_player)
 	{
 		spd.x = lengthdir_x(other.arma_ativa.knockback, point_direction(mouse_x, mouse_y + 8,x,y));
