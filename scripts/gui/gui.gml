@@ -1,3 +1,6 @@
+function gui_x(_x){ return _x - camera_get_view_x(view_camera[0])}
+function gui_y(_y){ return _y - camera_get_view_y(view_camera[0])}
+
 function gui_button(_x, _y, _sprite) constructor {
 	
 	sprite_index = _sprite;
@@ -26,9 +29,9 @@ function gui_button(_x, _y, _sprite) constructor {
 	d = u + height;
 	
 	hover = function() { return point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d)}
-	pressing = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and obj_input.pressing_primary)}
-	pressed = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and obj_input.pressed_primary)}
-	released = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and obj_input.released_primary)}
+	pressing = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and mouse_check_button_pressed(mb_left))}
+	pressed = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and mouse_check_button_pressed(mb_left))}
+	released = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and mouse_check_button_pressed(mb_left))}
 	
 	draw_ext = function() {}
 	drop_shadow = function(color, alpha, xoffset, yoffset){
@@ -61,7 +64,7 @@ function gui_button(_x, _y, _sprite) constructor {
 		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 		draw_ext();
 		
-		if global.debug draw_rectangle_color(l,u,r,d,$00ff00,$00ff00,$00ff00,$00ff00,1);
+		//if global.debug draw_rectangle_color(l,u,r,d,$00ff00,$00ff00,$00ff00,$00ff00,1);
 		
 	}
 }

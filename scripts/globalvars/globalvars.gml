@@ -6,8 +6,12 @@ global.arma_selecionada = "Shotgun"
 
 global.itemDB = [
 	
-	{
-		
+	{	//	Coquinha jelada
+		drop_image: spr_cocacola,
+		display_image: spr_cocagrande,
+		name: "'Cocacola Espumante'",
+		description: "Coquinha gelada hummmmm dilissa",
+		price: 10
 	}
 	
 ]

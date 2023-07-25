@@ -112,3 +112,32 @@ function draw_shadow(argument0, argument1, argument2) {
 }
 	
 function elastic(value, value_speed, target, transition_speed, tension){ return lerp(value_speed, (target - value) * transition_speed, tension) };
+
+//	Wrap
+//	Envolve o valor dentro do intervalo (abordagem iterativa) (desnecessário pesado).
+//	Tipo um clamp de trás pra frente
+function wrap(value, _min, _max){
+	if (value mod 1 == 0){
+		while (value > _max || value < _min){
+		    if (value > _max) value += _min - _max - 1;
+		    else if (value < _min) value += _max - _min + 1;
+		}
+		return(value);
+	} else {
+		var vOld = value + 1;
+		while (value != vOld){
+		    vOld = value;
+		    if (value < _min) value = _max - (_min - value);
+		    else if (value > _max) value = _min + (value - _max);
+		}
+		return(value);
+	}
+}
+		
+//	Wrap (rapido)
+//	Algoritmo mais simples e leve que envolve o valor dentro do intervalo (precisão baixa).
+function qwrap(value, _min, _max){
+	if (value > _max) return _min;
+	else if (value < _min) return _max;
+	else return value;
+}

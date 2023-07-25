@@ -25,7 +25,61 @@ tempo_flash = 0;
 xscale = 1;
 yscale = 1;
 
-inventario = [];
+inventario = [{	//	Coquinha jelada
+		drop_image: spr_cocacola,
+		display_image: spr_cocagrande,
+		name: "'Cocacola Espumante'",
+		description: "Coquinha gelada hummmmm dilissa",
+		price: 10
+	},{	//	Coquinha jelada
+		drop_image: spr_cocacola,
+		display_image: spr_cocagrande,
+		name: "'Cocacola Espumante'",
+		description: "Coquinha gelada hummmmm dilissa",
+		price: 10
+	},{	//	Coquinha jelada
+		drop_image: spr_cocacola,
+		display_image: spr_cocagrande,
+		name: "'Cocacola Espumante'",
+		description: "Coquinha gelada hummmmm dilissa",
+		price: 10
+	},{	//	Coquinha jelada
+		drop_image: spr_cocacola,
+		display_image: spr_cocagrande,
+		name: "'Cocacola Espumante'",
+		description: "Coquinha gelada hummmmm dilissa",
+		price: 10
+	},{	//	Coquinha jelada
+		drop_image: spr_cocacola,
+		display_image: spr_cocagrande,
+		name: "'Cocacola Espumante'",
+		description: "Coquinha gelada hummmmm dilissa",
+		price: 10
+	},{	//	Coquinha jelada
+		drop_image: spr_cocacola,
+		display_image: spr_cocagrande,
+		name: "'Cocacola Espumante'",
+		description: "Coquinha gelada hummmmm dilissa",
+		price: 10
+	},{	//	Coquinha jelada
+		drop_image: spr_cocacola,
+		display_image: spr_cocagrande,
+		name: "'Cocacola Espumante'",
+		description: "Coquinha gelada hummmmm dilissa",
+		price: 10
+	},{	//	Coquinha jelada
+		drop_image: spr_cocacola,
+		display_image: spr_cocagrande,
+		name: "'Cocacola Espumante'",
+		description: "Coquinha gelada hummmmm dilissa",
+		price: 10
+	},{	//	Coquinha jelada
+		drop_image: spr_cocacola,
+		display_image: spr_cocagrande,
+		name: "'Cocacola Espumante'",
+		description: "Coquinha gelada hummmmm dilissa",
+		price: 10
+	}];
 
 pony_r = 0;
 pony_spd = 0;
