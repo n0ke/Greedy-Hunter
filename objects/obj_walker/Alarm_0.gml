@@ -2,6 +2,7 @@
 
 if(!instance_exists(obj_player))
 {
+	instance_create_layer(x + sprite_width/2, bbox_bottom, "Instances", obj_portal)
 	instance_create_layer(x + sprite_width/2, bbox_bottom, "Instances", obj_player);
 }
 

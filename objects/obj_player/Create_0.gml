@@ -5,7 +5,7 @@ dir = {x: 0, y: 0}
 #macro ACC .3
 #macro MID_HEIGHT sprite_get_height(sprite_index) * .5
 
-weapon = instance_create_layer(x, y, "Instances", obj_weapon);
+_weapon = instance_create_layer(x, y, "Instances", obj_weapon);
 
 lado = 1;
 
