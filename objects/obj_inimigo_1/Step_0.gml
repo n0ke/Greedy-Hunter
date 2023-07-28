@@ -1,6 +1,9 @@
 
 event_inherited();
 
+x += velh;
+y += velv;
+
 if(step)
 {
 	if(instance_exists(target))
@@ -47,10 +50,17 @@ if(step)
 			}*/
 			
 			//Seguindo o player
-			
-				velh = lerp(velh, lengthdir_x(vel, _dir ), acel) 
-				velv = lerp(velv, lengthdir_y(vel, _dir ), acel) 
-			
+				
+			if distance_to_object(obj_player) < 150
+			{
+				velh = lerp(velh * !bool(collision_line(x, y, obj_player.x, obj_player.y, obj_colisor, false, true)), lengthdir_x(vel, _dir ), acel) 
+				velv = lerp(velv * !bool(collision_line(x, y, obj_player.x, obj_player.y, obj_colisor, false, true)), lengthdir_y(vel, _dir ), acel) 
+			}
+			else
+			{
+				velh = 0;
+				velv = 0;
+			}
 			
 			
 			/*else //Ficando parado
@@ -68,8 +78,7 @@ if(step)
 	
 	
 	//Aplicando movimento no inimigo
-	x += velh;
-	y += velv;
+	
 	
 	}
 }

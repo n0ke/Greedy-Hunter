@@ -18,29 +18,29 @@ sell.draw();
 	for(var i = 0; i <= inventory_index; i++){
 	
 		draw_sprite_ext(
-			inventory[i].display_image,
+			global.inventario[i].display_image,
 			0,
 			_gui_width * .5 + (i - inventory_index + inventory_swap_anim) * (_gui_width * .4) / power((abs(i - inventory_index + inventory_swap_anim) + 1), 1.07),
 			_gui_height * .5,
 			1 / power(abs(i - inventory_index + inventory_swap_anim) + 1, 1.05),
 			1 / power(abs(i - inventory_index + inventory_swap_anim) + 1, 1.05),
 			0,
-			merge_color(#ffffff, 0, abs(i - inventory_index + inventory_swap_anim) / array_length(inventory)),
+			merge_color(#ffffff, 0, abs(i - inventory_index + inventory_swap_anim) / array_length(global.inventario)),
 			1
 		);
 	
 	}
-	for(var i = array_length(inventory) - 1; i > inventory_index; i--){
+	for(var i = array_length(global.inventario) - 1; i > inventory_index; i--){
 	
 		draw_sprite_ext(
-			inventory[i].display_image,
+			global.inventario[i].display_image,
 			0,
 			_gui_width * .5 + (i - inventory_index + inventory_swap_anim) * (_gui_width * .4) / power((abs(i - inventory_index + inventory_swap_anim) + 1), 1.07),
 			_gui_height * .5,
 			1 / power(abs(i - inventory_index + inventory_swap_anim) + 1, 1.05),
 			1 / power(abs(i - inventory_index + inventory_swap_anim) + 1, 1.05),
 			0,
-			merge_color(#ffffff, 0, abs(i - inventory_index + inventory_swap_anim) / array_length(inventory)),
+			merge_color(#ffffff, 0, abs(i - inventory_index + inventory_swap_anim) / array_length(global.inventario)),
 			1
 		);
 	
@@ -53,14 +53,14 @@ draw_set_valign(fa_middle);
 draw_set_font(fnt_geral);
 draw_outline(_gui_width * .5,
 	(_gui_height * .09),
-	inventory[i].name,
+	global.inventario[i].name,
 	1,
 	1,
 	0,
 	2
 )
 
-draw_outline(_gui_width * .5, _gui_height * .2,inventory[inventory_index].description,1,1,0,2)
+draw_outline(_gui_width * .5, _gui_height * .2,global.inventario[inventory_index].description,1,1,0,2)
 
 var _rainbow1 = color_cycle(5, 50, 127, 255);
 var _rainbow2 = color_cycle(5, 0, 127, 255);

@@ -20,6 +20,8 @@ newroom.draw_ext = function() {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_text(newroom.x, newroom.y, "Proximo andar");
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
 }
 
 shop.draw_ext = function() {
@@ -27,4 +29,6 @@ shop.draw_ext = function() {
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_middle);
 	draw_text(shop.x, shop.y, "Ir à loja");
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
 }

@@ -60,6 +60,7 @@ function gui_button(_x, _y, _sprite) constructor {
 		draw_sprite_ext(sprite_index, image_index, x + shadow_xoffset, y + shadow_yoffset, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 		gpu_set_fog(0, $ffffff, 0, 1);
 		draw_set_alpha(1);
+		draw_set_color(#ffffff);
 		
 		draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
 		draw_ext();

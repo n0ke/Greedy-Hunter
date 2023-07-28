@@ -24,8 +24,6 @@ tempo_flash = 0;
 xscale = 1;
 yscale = 1;
 
-inventario = [];
-
 pony_r = 0;
 pony_spd = 0;
 

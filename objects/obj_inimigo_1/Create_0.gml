@@ -4,7 +4,7 @@ event_inherited();
 vida = 20;
 vida_max = 20;
 
-vel = .8;
+vel = 1.5;
 spr_idle = spr_robo_atirador_idle;
 spr_move = spr_robo_atirador_move;
 
@@ -30,7 +30,6 @@ projetil_speed = 3;
 
 accuracy = 5;
 
-gun_sprite = spr_braco_robo_atirador;
 gun_angle = 0;
 gun_xscale = 1;
 gun_yscale = 1;
