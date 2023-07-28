@@ -10,9 +10,18 @@ global.itemDB = [
 		drop_image: spr_cocacola,
 		display_image: spr_cocagrande,
 		name: "'Cocacola Espumante'",
-		description: "Coquinha gelada hummmmm dilissa",
-		price: 10
-	}
+		description: "Coquinha gelada hummmmm",
+		price: 10,
+		index: 0
+	},
+	{	//	Coquinha jelada
+		drop_image: spr_taca,
+		display_image: spr_tacagrande,
+		name: "Taça Dourada",
+		description: "Parece um tesouro egípcio",
+		price: 100,
+		index: 1
+	},
 	
 ]
 

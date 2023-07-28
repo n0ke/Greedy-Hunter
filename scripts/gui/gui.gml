@@ -29,9 +29,9 @@ function gui_button(_x, _y, _sprite) constructor {
 	d = u + height;
 	
 	hover = function() { return point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d)}
-	pressing = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and mouse_check_button_pressed(mb_left))}
+	pressing = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and mouse_check_button(mb_left))}
 	pressed = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and mouse_check_button_pressed(mb_left))}
-	released = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and mouse_check_button_pressed(mb_left))}
+	released = function() { return (point_in_rectangle(gui_x(mouse_x), gui_y(mouse_y), l, u, r, d) and mouse_check_button_released(mb_left))}
 	
 	draw_ext = function() {}
 	drop_shadow = function(color, alpha, xoffset, yoffset){

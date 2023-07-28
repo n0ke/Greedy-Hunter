@@ -1,8 +1,6 @@
 
 
 
-
-
 var shot_key = mouse_check_button(mb_left)
 if(cooldown > 0) cooldown--;
 if shot_key && cooldown <= 0 and !global.modo_inventario && ammo > 0{
@@ -22,7 +20,7 @@ if shot_key && cooldown <= 0 and !global.modo_inventario && ammo > 0{
 		spd.y = lengthdir_y(other.arma_ativa.knockback, point_direction(mouse_x, mouse_y + 8,x,y));
 	}
 }
-var _sep = 6;
+var _sep = 12;
 var _len = arma_ativa.length;
 var dir = point_direction(obj_player.x, obj_player.y, mouse_x, mouse_y + _sep);
 x = obj_player.x + lengthdir_x(_len, dir);

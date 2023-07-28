@@ -13,7 +13,7 @@ draw_sprite_ext(
 );
 
 draw_sprite_ext(
-	sprite_index,
+	item.drop_image,
 	image_index,
 	x,
 	y - 6 - 18 * pedestal + vz,

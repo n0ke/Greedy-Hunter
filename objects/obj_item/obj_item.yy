@@ -15,7 +15,7 @@
     "path": "folders/Code/Gameplay.yy",
   },
   "parentObjectId": null,
-  "persistent": true,
+  "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
   "physicsFriction": 0.2,
@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_cocacola",
-    "path": "sprites/spr_cocacola/spr_cocacola.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

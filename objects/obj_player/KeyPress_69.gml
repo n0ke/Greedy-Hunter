@@ -2,9 +2,8 @@ var _pedestal = instance_nearest(x, y, obj_pedestal);
 var _item = instance_nearest(x, y, obj_item);
 
 if (instance_exists(_item) and !_item.pedestal and (distance_to_object(_item) < 32)){
-	array_insert(inventario, 0, global.itemDB[_item.index]);
-	instance_create_depth(0, 0, -2040, obj_obtain_item);
-	
+	array_insert(inventario, 0, _item.item);
+	instance_create_depth(0, 0, -2040, obj_obtain_item, {item: _item.item});
 	instance_destroy(_item);
 }
  

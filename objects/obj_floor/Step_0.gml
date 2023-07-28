@@ -13,6 +13,5 @@ if(instance_exists(obj_player))
 		var _col = collision_circle(ini.x, ini.y, 24, obj_vacuo, true, true);
 		
 		if(_col) instance_destroy(ini);	
-		spawna = false
 	}
 }

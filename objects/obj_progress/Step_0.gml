@@ -8,8 +8,16 @@ var _gui_height = display_get_gui_height();
 newroom.update();
 shop.update();
 
-newroom.x = _gui_width * .66;
-newroom.y = _gui_height * .5;
+newroom.x = _gui_width * .33;
+newroom.y = _gui_height * .66;
 
-shop.x = _gui_width * .34;
-shop.y = _gui_height * .5;
+shop.x = _gui_width * .66;
+shop.y = _gui_height * .66;
+
+if newroom.released(){
+	room_restart();
+}
+
+if shop.released(){
+	room_goto(rm_store);
+}

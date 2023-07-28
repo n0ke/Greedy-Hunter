@@ -63,7 +63,7 @@ if(step)
 	//Morrendo
 	if(vida <= 0)
 	{
-		instance_create_layer(x, y, "Instances", obj_item, {pedestal: false});
+		instance_create_layer(x, y, "Instances", obj_item, {pedestal: false, item: global.itemDB[irandom(array_length(global.itemDB) - 1)]});
 		repeat(20)
 		{
 			var blood = instance_create_layer(x,y,"Vacuo",obj_blood)

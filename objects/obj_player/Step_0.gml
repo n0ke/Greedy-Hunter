@@ -1,7 +1,6 @@
 depth = -y;
 
 //	Input
-global.modo_inventario = keyboard_check_pressed(vk_tab) ? !global.modo_inventario : global.modo_inventario;
 
 var _spd_real = point_distance(x,y,x+spd.x,y+spd.y)
 
@@ -9,7 +8,8 @@ var _spd_real = point_distance(x,y,x+spd.x,y+spd.y)
 
 if (_spd_real > .5 )
 {
-	/*if ((y - mouse_y) <= 0)*/ sprite_index = spr_player_fwd_walking;
+	if ((y - mouse_y) <= 0) sprite_index = spr_player_fwd_walking;
+	else sprite_index = spr_player_back_walking;
 	
 	if (random(4) < 1)
 	{
@@ -40,7 +40,6 @@ spd.y = lerp(spd.y, lengthdir_y(WALK_SPEED * (dir.y != 0), _angle), ACC);
 
 move_and_collide(spd.x, spd.y, obj_colisor);
 
-//	Inventario
 
 #region HitFlash
 
@@ -67,3 +66,5 @@ if (cooldown_hit > 0) image_alpha = sin(get_timer()/10000) else image_alpha = 1
 
 pony_spd = elastic(pony_r, pony_spd, (spd.x - spd.y * lado) * 5, .75, .066);
 pony_r += pony_spd;
+
+_weapon.depth = depth + sign(y - mouse_y);

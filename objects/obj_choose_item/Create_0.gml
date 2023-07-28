@@ -30,7 +30,8 @@ minus_scale = 1;
 sell_scale = 1;
 
 //	Inventory
-inventory_index = (inventory != []) ? array_length(inventory) div 2 : 0;
+inventory_index = array_length(inventory) div 2;
+show_debug_message(inventory);
 inventory_swap_anim = 0;
 inventory_swap_spd = 0;
 

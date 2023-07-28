@@ -14,7 +14,6 @@ inventario_val = 0;
 obj_camera.cameraSetPos(x, y);
 
 
-
 vida = 6
 vida_max = 6;
 cooldown_hit = 0;
@@ -25,61 +24,23 @@ tempo_flash = 0;
 xscale = 1;
 yscale = 1;
 
-inventario = [{	//	Coquinha jelada
-		drop_image: spr_cocacola,
-		display_image: spr_cocagrande,
-		name: "'Cocacola Espumante'",
-		description: "Coquinha gelada hummmmm dilissa",
-		price: 10
-	},{	//	Coquinha jelada
-		drop_image: spr_cocacola,
-		display_image: spr_cocagrande,
-		name: "'Cocacola Espumante'",
-		description: "Coquinha gelada hummmmm dilissa",
-		price: 10
-	},{	//	Coquinha jelada
-		drop_image: spr_cocacola,
-		display_image: spr_cocagrande,
-		name: "'Cocacola Espumante'",
-		description: "Coquinha gelada hummmmm dilissa",
-		price: 10
-	},{	//	Coquinha jelada
-		drop_image: spr_cocacola,
-		display_image: spr_cocagrande,
-		name: "'Cocacola Espumante'",
-		description: "Coquinha gelada hummmmm dilissa",
-		price: 10
-	},{	//	Coquinha jelada
-		drop_image: spr_cocacola,
-		display_image: spr_cocagrande,
-		name: "'Cocacola Espumante'",
-		description: "Coquinha gelada hummmmm dilissa",
-		price: 10
-	},{	//	Coquinha jelada
-		drop_image: spr_cocacola,
-		display_image: spr_cocagrande,
-		name: "'Cocacola Espumante'",
-		description: "Coquinha gelada hummmmm dilissa",
-		price: 10
-	},{	//	Coquinha jelada
-		drop_image: spr_cocacola,
-		display_image: spr_cocagrande,
-		name: "'Cocacola Espumante'",
-		description: "Coquinha gelada hummmmm dilissa",
-		price: 10
-	},{	//	Coquinha jelada
-		drop_image: spr_cocacola,
-		display_image: spr_cocagrande,
-		name: "'Cocacola Espumante'",
-		description: "Coquinha gelada hummmmm dilissa",
-		price: 10
-	},{	//	Coquinha jelada
-		drop_image: spr_cocacola,
-		display_image: spr_cocagrande,
-		name: "'Cocacola Espumante'",
-		description: "Coquinha gelada hummmmm dilissa",
-		price: 10
-	}];
+inventario = [];
 
 pony_r = 0;
 pony_spd = 0;
+
+function ponytail(){
+	draw_sprite_ext(
+		spr_ponytail,
+		image_index,
+		x - spd.x,
+		y - 24 - spd.y,
+		lado,
+		1,
+		pony_r,
+		#ffffff,
+		image_alpha
+	);
+}
+
+instance_create_layer(x, y, "Instances", obj_portal);

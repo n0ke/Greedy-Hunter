@@ -18,7 +18,7 @@ inventory_swap_spd = elastic(inventory_swap_anim, inventory_swap_spd, 0, .4, .33
 inventory_swap_anim += inventory_swap_spd;
 
 if sell.released() {
-	instance_create_layer(pedestal.x, pedestal.y , "Instances", obj_item, {sprite_index: inventory[inventory_index].drop_image, pedestal: true, price: price, price_df: inventory[inventory_index].price});
+	instance_create_layer(pedestal.x, pedestal.y , "Instances", obj_item, {item: inventory[inventory_index], pedestal: true});
 	instance_destroy();
 }
 
