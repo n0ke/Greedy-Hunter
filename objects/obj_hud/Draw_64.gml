@@ -13,5 +13,5 @@ draw_sprite_ext(spr_health,0,11,20, ((obj_player.vida/obj_player.vida_max)*5.5),
 
 draw_set_font(fnt_geral)
 draw_outline(15,25,obj_weapon.arma_ativa.ammo,,,0,1)
-draw_sprite(spr_coin,get_timer()/100000,30,32)
+draw_set_valign(fa_top) draw_set_halign(fa_middle )  draw_sprite(spr_coin,get_timer()/100000,30,32)
 }
