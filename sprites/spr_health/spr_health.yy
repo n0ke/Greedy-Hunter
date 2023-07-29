@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 3,
   "parent": {
-    "name": "Greedy Hunter",
-    "path": "Greedy Hunter.yyp",
+    "name": "Sprites",
+    "path": "folders/Asset/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

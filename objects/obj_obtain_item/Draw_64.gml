@@ -62,7 +62,7 @@ draw_outline(_gui_width * .5,_gui_height - (_gui_height * .25) * transition_val,
 
 var _rainbow1 = color_cycle(5, 50, 127, 255);
 var _rainbow2 = color_cycle(5, 0, 127, 255);
-draw_outline(_gui_width * .5 + random_amp(2),_gui_height - (_gui_height * .14) * transition_val + random_amp(2),$"Preço Médio: R${item.price},{string_repeat("0", min(2 - string_length(frac(item.price)), 1)) + string(frac(item.price))}",1,1,0,2,
+draw_outline(_gui_width * .5 + random_amp(2),_gui_height - (_gui_height * .14) * transition_val + random_amp(2),$"Preço Médio: R${item.price_df},{string_repeat("0", min(2 - string_length(frac(item.price)), 1)) + string(frac(item.price))}",1,1,0,2,
 	_rainbow1,
 	_rainbow1,
 	_rainbow2,
