@@ -14,8 +14,8 @@ inventario_val = 0;
 obj_camera.cameraSetPos(x, y);
 
 
-vida = 6;
-vida_max = 6;
+vida = 100;
+vida_max = 100;
 cooldown_hit = 0;
 cooldown_hit_max = 40;
 tomei_hit = false;

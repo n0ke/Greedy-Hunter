@@ -13,7 +13,7 @@ range_max = 200;
 
 range = range_min;
 
-damage = 1;
+damage = 10;
 
 estado_timer = 0;
 estado_timer_max = irandom_range(1, 4) * room_speed;

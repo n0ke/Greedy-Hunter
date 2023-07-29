@@ -11,7 +11,7 @@ global.spread = 8;
 
 global.bulletsp = 30;
 
-ammo = 40;
+ammo = 90;
 
 function weapon(_nome, _recoil, _dmg, _cadencia, _projetil, _length, _sprite, _ammo, _cdreload, _knockback) constructor{
 	
@@ -28,7 +28,7 @@ function weapon(_nome, _recoil, _dmg, _cadencia, _projetil, _length, _sprite, _a
 	
 }
 
-global.shotgun = new weapon("Shotgun", 10, 8, 7, obj_bullet, 2, spr_weapon, 40, 2,2);
+global.shotgun = new weapon("Shotgun", 10, 8, 7, obj_bullet, 2, spr_weapon, 90, 2,2);
 
 global.itemDB = [
 	
