@@ -21,5 +21,5 @@ with(other)
 			
 }
 
-instance_destroy();
+SE_MATA;
 

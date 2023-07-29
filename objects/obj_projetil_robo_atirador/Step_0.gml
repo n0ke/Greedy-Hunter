@@ -2,7 +2,7 @@ speed = lerp(speed, 0, spd_dec);
 
 life--;
 
-if(life <= 0) instance_destroy();
+if(life <= 0) SE_MATA;
 
 
 

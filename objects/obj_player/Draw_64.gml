@@ -1,6 +1,7 @@
 var _gui_width = display_get_gui_width();
 var _gui_height = display_get_gui_height();
 
+//	Setinha
 if obj_portal.active draw_sprite_ext(
 	spr_arrow,
 	0,

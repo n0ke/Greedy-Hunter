@@ -1,1 +1,1 @@
-if !pedestal instance_destroy();
+if !pedestal SE_MATA;

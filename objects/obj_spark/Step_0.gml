@@ -1,2 +1,2 @@
 speed *= decay;
-if (speed <= 1) instance_destroy();
+if (speed <= 1) SE_MATA;

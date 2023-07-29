@@ -8,6 +8,6 @@ image_yscale -= .06;
 image_alpha -= .08;
 
 
-if(image_xscale <= 0) instance_destroy();
+if(image_xscale <= 0) SE_MATA;
 
 depth = -bbox_bottom;

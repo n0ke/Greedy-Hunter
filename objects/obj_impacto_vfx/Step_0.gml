@@ -9,7 +9,7 @@ switch(debri)
 	case false:
 	if (image_index >= image_number-1)
 	{
-		instance_destroy();
+		SE_MATA;
 	}	
 	break;
 	
@@ -19,7 +19,7 @@ switch(debri)
 		surface_set_target(global.surf_debri)
 		draw_self();
 		surface_reset_target()
-		instance_destroy();
+		SE_MATA;
 	}
 	break;
 }

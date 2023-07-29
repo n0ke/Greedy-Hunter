@@ -34,7 +34,5 @@ inventory_index = array_length(global.inventario) div 2;
 inventory_swap_anim = 0;
 inventory_swap_spd = 0;
 
-show_message(array_length(global.inventario));
-
 //	Store
-price = global.inventario[inventory_index].price;
+price = global.inventario[inventory_index].price_df;

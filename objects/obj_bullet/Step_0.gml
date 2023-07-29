@@ -6,7 +6,7 @@ if collision_line(x, y, x + lengthdir_x(speed, direction), y + lengthdir_y(speed
 		x += lengthdir_x(1, direction);
 		y += lengthdir_y(1, direction);
 	}
-	instance_destroy();
+	SE_MATA;
 	
 	repeat(6)
 	{

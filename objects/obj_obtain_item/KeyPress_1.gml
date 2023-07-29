@@ -1,1 +1,1 @@
-if paused instance_destroy();
+if paused SE_MATA;

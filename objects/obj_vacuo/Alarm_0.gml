@@ -10,7 +10,7 @@ var l = place_meeting(x - 1, y, obj_vacuo), //Esquerda
 	//rb = place_meeting(x + 1, y + 1, obj_vacuo), //Diagonal esquerda baixo
 
 //Destruindo blocos órfãos
-if(!l && !r && !t && !b) instance_destroy(); 	
+if(!l && !r && !t && !b) SE_MATA; 	
 
 //Criando colisor nas bordas
 if(!l && r  && t  && b)	 CRIA_PAREDE;

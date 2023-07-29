@@ -79,7 +79,25 @@ draw_text_transformed(_x + _out, _y - _out, _string, _xscale, _yscale, _angle);
 //draw_set_color(c_in);
 
 
-draw_text_color(_x, _y, _string,c1,c2,c3,c4,1);
+draw_text_transformed_color(_x, _y, _string, _xscale, _yscale, _angle, c1,c2,c3,c4,1);
+
+}
+function draw_outline_ext(_x, _y, _string, _sep, _w, _xscale = 1, _yscale = 1, _angle,_out ,c1 = c_white,c2 = c_white,c3 = c_white,c4 = c_white){
+
+draw_set_color($000000);
+
+draw_text_ext_transformed(_x + _out, _y, _string, _sep, _w, _xscale, _yscale, _angle);
+draw_text_ext_transformed(_x, _y + _out, _string, _sep, _w, _xscale, _yscale, _angle);
+draw_text_ext_transformed(_x - _out, _y, _string, _sep, _w, _xscale, _yscale, _angle);
+draw_text_ext_transformed(_x, _y - _out, _string, _sep, _w, _xscale, _yscale, _angle);
+
+draw_text_ext_transformed(_x + _out, _y + _out, _string, _sep, _w, _xscale, _yscale, _angle);
+draw_text_ext_transformed(_x - _out, _y + _out, _string, _sep, _w, _xscale, _yscale, _angle);
+draw_text_ext_transformed(_x - _out, _y - _out, _string, _sep, _w, _xscale, _yscale, _angle);
+draw_text_ext_transformed(_x + _out, _y - _out, _string, _sep, _w, _xscale, _yscale, _angle);
+
+//draw_set_color(c_in);
+draw_text_ext_transformed_color(_x, _y, _string, _sep, _w, _xscale, _yscale, _angle, c1,c2,c3,c4,1);
 
 }
 function sleep()
@@ -141,3 +159,9 @@ function qwrap(value, _min, _max){
 	else if (value < _min) return _max;
 	else return value;
 }
+
+//	Out of range
+	//	Dado um alcance, a função retorna se o valor está fora do mesmo.
+	function out_of_range(value, _min, _max){ return(value < _min) or (value > _max)};
+	
+#macro SE_MATA instance_destroy();

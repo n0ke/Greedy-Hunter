@@ -9,7 +9,7 @@ direction    = random(360)
 
 if (alpha <= 0)
 {
-	instance_destroy();	
+	SE_MATA;	
 }
 
 //O mesmo com a colisão do fundo

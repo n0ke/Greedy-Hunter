@@ -1,2 +1,2 @@
 ///@desc
-instance_destroy();
+SE_MATA;
