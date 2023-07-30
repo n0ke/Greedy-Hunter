@@ -30,6 +30,6 @@ if (global.shotgun.ammo >= preco[upgrade]) and distance_to_object(obj_player) < 
 	
 	global.shotgun.ammo -= preco[upgrade];
 	
-	with(obj_upgrade) SE_MATA;
+	with(id) SE_MATA;
 	
 }
