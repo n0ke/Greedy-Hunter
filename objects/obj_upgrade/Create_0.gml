@@ -5,7 +5,6 @@ enum UPGRADES{
 	PRECISAO,
 	DANO,
 	VELOCIDADE,
-	PERFURACAO
 }
 
 preco = [
@@ -13,7 +12,6 @@ preco = [
 	30,
 	60,
 	40,
-	20
 ];
 
-upgrade = irandom(5);
+upgrade = irandom(3);

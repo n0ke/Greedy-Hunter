@@ -1,4 +1,4 @@
-if (global.shotgun.ammo >= upgrade) and distance_to_object(obj_player) < 32{
+if (global.shotgun.ammo >= preco[upgrade]) and distance_to_object(obj_player) < 32{
 	
 	switch(upgrade){
 		
@@ -27,6 +27,8 @@ if (global.shotgun.ammo >= upgrade) and distance_to_object(obj_player) < 32{
 		}break;
 			
 	}
+	
+	global.shotgun.ammo -= preco[upgrade];
 	
 	with(obj_upgrade) SE_MATA;
 	

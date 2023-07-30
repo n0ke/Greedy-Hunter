@@ -10,7 +10,19 @@ draw_sprite_ext(
 	.5
 );
 
+var _colorcyc = color_cycle(5, x * .125, 127, 255);
 
+draw_sprite_ext(
+	spr_brilho_radial,
+	0,
+	x,
+	y - z - 24,
+	.5,
+	.5,
+	current_time * .07 + x,
+	_colorcyc,
+	.55
+);
 
 draw_sprite_ext(
 	sprite_index,
@@ -20,7 +32,7 @@ draw_sprite_ext(
 	image_xscale,
 	image_yscale,
 	image_angle,
-	image_blend,
+	color_cycle(5, x * .125, 127, 255),
 	image_alpha
 );
 

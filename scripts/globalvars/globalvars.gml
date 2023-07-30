@@ -56,6 +56,46 @@ global.itemDB = [
 		price: 3,
 		price_df: 3
 	},
+	{	//	badtothebone.wav
+		drop_image: spr_caveiradecoroa,
+		display_image: spr_caveiragrande,
+		name: "Caveira de Coroa",
+		description: "Valioso ou não? Eis a questão...",
+		price: 15,
+		price_df: 15
+	},
+	{	//	osso
+		drop_image: spr_osso,
+		display_image: spr_ossogrande,
+		name: "Osso fofinho",
+		description: "Duro de roer",
+		price: 3,
+		price_df: 3
+	},
+	{	//	Rogerio
+		drop_image: spr_rogerio,
+		display_image: spr_rogeriogrande,
+		name: "Rogério",
+		description: "Pedra de estimação",
+		price: 2,
+		price_df: 2
+	},
+	{	//	Drip
+		drop_image: spr_sapatogelo,
+		display_image: spr_sapatogelogrande,
+		name: "Sapatos de gelo",
+		description: "Eiii! Esses são falsos! São da Shein!",
+		price: 7,
+		price_df: 7
+	},
+	{	//	Estatueta
+		drop_image: spr_pedraestatua,
+		display_image: spr_pedraestautagrande,
+		name: "Pedra que parece estatua",
+		description: "É só uma pedra, não parece ter sido lapidada, mas é bonita",
+		price: 4,
+		price_df: 4
+	},
 ]
 
 global.mini_font = font_add_sprite_ext(spr_minifont, "!?AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890:.,|/$%-+()_'@<>", true, 1);

@@ -66,8 +66,8 @@ draw_outline(_gui_width * .5 + random_amp(2),_gui_height - (_gui_height * .14) *
 	_rainbow1,
 	_rainbow1,
 	_rainbow2,
-	_rainbow2)
-
+	_rainbow2
+)
 
 draw_text_color(
 	_gui_width * .5,

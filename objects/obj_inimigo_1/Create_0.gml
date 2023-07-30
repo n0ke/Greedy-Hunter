@@ -4,7 +4,7 @@ event_inherited();
 vida = 20;
 vida_max = 20;
 
-vel = 1.5;
+vel = 1;
 spr_idle = spr_robo_atirador_idle;
 spr_move = spr_robo_atirador_move;
 
@@ -13,7 +13,7 @@ range_max = 200;
 
 range = range_min;
 
-damage = 10;
+damage = 20;
 
 estado_timer = 0;
 estado_timer_max = irandom_range(1, 4) * room_speed;

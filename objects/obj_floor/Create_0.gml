@@ -7,7 +7,7 @@ image_speed = 0;
 image_index = irandom(image_number) - 1;
 
 
-inimigo_qtd_max = 8;
+inimigo_qtd_max = 12;
 
 spawna = true;
 _a = 0;
