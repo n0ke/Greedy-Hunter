@@ -13,6 +13,11 @@
     {"name":"Code","order":2,"path":"folders/Code.yy",},
     {"name":"Collision","order":4,"path":"folders/Code/Collision.yy",},
     {"name":"Misc","order":1,"path":"folders/Code/Misc.yy",},
+    {"name":"Objects","order":3,"path":"folders/Objects.yy",},
+    {"name":"Geral","order":1,"path":"folders/Objects/Geral.yy",},
+    {"name":"Camera","order":1,"path":"folders/Objects/Geral/Camera.yy",},
+    {"name":"Sprites","order":4,"path":"folders/Sprites.yy",},
+    {"name":"Menu","order":1,"path":"folders/Sprites/Menu.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_weapon","order":3,"path":"objects/obj_weapon/obj_weapon.yy",},

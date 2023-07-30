@@ -5,7 +5,7 @@ with(other)
 		spd.x = lengthdir_x(16, point_direction(other.x,other.y,obj_player.x,obj_player.y));
 		spd.y = lengthdir_y(16, point_direction(other.x,other.y,obj_player.x,obj_player.y));
 		sleep(50)
-		vida -= other.damage;
+		obj_weapon.arma_ativa.ammo -= other.damage;
 		
 		tempo_flash = 2;
 		tomei_hit = true;

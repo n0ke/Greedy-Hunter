@@ -13,5 +13,6 @@ newroom.y = _gui_height * .66;
 
 if newroom.released(){
 	audio_play_sound(snd_ui_confirm, 0, 0);
-	transto(rm_main);
+	var r = instance_create_layer(0, 0, "Instances", obj_transicao);
+	r.Room = rm_main;
 }

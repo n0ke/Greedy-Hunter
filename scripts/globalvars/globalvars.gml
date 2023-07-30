@@ -42,8 +42,8 @@ global.itemDB = [
 		display_image: spr_cocagrande,
 		name: "'Cocacola Espumante'",
 		description: "Coquinha gelada hummmmm",
-		price: 5,
-		price_df: 5
+		price: 10,
+		price_df: 10
 	},
 	{	//	Taça Dourada
 		drop_image: spr_taca,
@@ -58,8 +58,8 @@ global.itemDB = [
 		display_image: spr_petecagrande,
 		name: "Taco de baseball quebrado",
 		description: "Não da pra usar nem pra bater",
-		price: 3,
-		price_df: 3
+		price: 6,
+		price_df: 6
 	},
 	{	//	badtothebone.wav
 		drop_image: spr_caveiradecoroa,
@@ -74,32 +74,32 @@ global.itemDB = [
 		display_image: spr_ossogrande,
 		name: "Osso fofinho",
 		description: "Duro de roer",
-		price: 3,
-		price_df: 3
+		price: 9,
+		price_df: 9
 	},
 	{	//	Rogerio
 		drop_image: spr_rogerio,
 		display_image: spr_rogeriogrande,
 		name: "Rogério",
 		description: "Pedra de estimação",
-		price: 2,
-		price_df: 2
+		price: 30,
+		price_df: 30
 	},
 	{	//	Drip
 		drop_image: spr_sapatogelo,
 		display_image: spr_sapatogelogrande,
 		name: "Sapatos de gelo",
 		description: "Eiii! Esses são falsos! São da Shein!",
-		price: 7,
-		price_df: 7
+		price: 14,
+		price_df: 14
 	},
 	{	//	Estatueta
 		drop_image: spr_pedraestatua,
 		display_image: spr_pedraestautagrande,
 		name: "Pedra que parece estatua",
 		description: "É só uma pedra, não parece ter sido lapidada, mas é bonita",
-		price: 4,
-		price_df: 4
+		price: 10,
+		price_df: 10
 	},
 ]
 
