@@ -8,6 +8,7 @@ var _scene_direction = sign(scene_index - scene_current);
 
 //	Animação
 if (_scene_direction != 0){
+	audio_play_sound(snd_ui_select, 0, 0);
 	content_xto = _scene_direction * display_get_gui_width();
 	if (abs(content_xto - content_x) < 100){
 		content_x = -_scene_direction * display_get_gui_width();

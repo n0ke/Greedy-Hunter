@@ -3,8 +3,10 @@ with(other)
 {
 	if(escudo == false && cooldown_hit <= 0)
 	{
-		velh = lengthdir_x(4, other.direction);
-		velv = lengthdir_y(4, other.direction);
+		if (other == obj_boss){
+			velh = lengthdir_x(4, other.direction);
+			velv = lengthdir_y(4, other.direction);
+		}
 		
 		vida -= other.damage;
 		

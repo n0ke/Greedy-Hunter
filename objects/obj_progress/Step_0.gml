@@ -15,9 +15,11 @@ shop.x = _gui_width * .66;
 shop.y = _gui_height * .66;
 
 if newroom.released(){
-	room_restart();
+	audio_play_sound(snd_ui_confirm, 0, 0);
+	transto(room);
 }
 
 if shop.released(){
-	room_goto(rm_store);
+	audio_play_sound(snd_ui_confirm, 0, 0);
+	transto(rm_store);
 }

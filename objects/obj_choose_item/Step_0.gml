@@ -10,8 +10,13 @@ var _input = right.pressed() - left.pressed();
 
 inventory_index = qwrap(inventory_index + _input, 0, array_length(global.inventario) - 1);
 
-if (_input != 0) price = global.inventario[inventory_index].price_df;
+if (_input != 0) {
+	price = global.inventario[inventory_index].price_df;
+	audio_play_sound(snd_ui_select, 0, 0);
+}
 price += plus.pressed() - minus.pressed();
+
+if plus.pressed() or minus.pressed() audio_play_sound(snd_ui_select, 0, 0);
 
 inventory_swap_anim += _input;
 inventory_swap_spd = elastic(inventory_swap_anim, inventory_swap_spd, 0, .4, .33);
@@ -19,8 +24,9 @@ inventory_swap_anim += inventory_swap_spd;
 
 if sell.released() {
 	var _item = global.inventario[inventory_index];
+	audio_play_sound(snd_ui_confirm, 0, 0);
 	_item.price = price;
-	instance_create_layer(pedestal.x, pedestal.y , "Instances", obj_item, {item: _item, pedestal: true});
+	pedestal.item = instance_create_layer(pedestal.x, pedestal.y , "Instances", obj_item, {item: _item, pedestal: true});
 	array_delete(global.inventario, inventory_index, 1);
 	SE_MATA;
 }

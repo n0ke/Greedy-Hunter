@@ -16,9 +16,11 @@ switch(debri)
 	case true:
 	if(speed<=0)
 	{
+		if room != rm_store{
 		surface_set_target(global.surf_debri)
 		draw_self();
 		surface_reset_target()
+		}
 		SE_MATA;
 	}
 	break;

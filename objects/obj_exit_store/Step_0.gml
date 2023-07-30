@@ -12,5 +12,6 @@ newroom.y = _gui_height * .66;
 
 
 if newroom.released(){
-	room_goto(rm_main);
+	audio_play_sound(snd_ui_confirm, 0, 0);
+	transto(rm_main);
 }

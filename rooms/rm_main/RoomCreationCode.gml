@@ -1,1 +1,1 @@
-global.modo_inventario = false;
+global.dungeon++;

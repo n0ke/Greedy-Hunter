@@ -165,3 +165,14 @@ function qwrap(value, _min, _max){
 	function out_of_range(value, _min, _max){ return(value < _min) or (value > _max)};
 	
 #macro SE_MATA instance_destroy();
+
+
+function transto(_room){
+	
+	if !instance_exists(obj_transition) instance_create_depth(x, y, depth, obj_transition);
+	
+	if global.transval == 0{
+		global.transval = 1;
+		global.nextroom = _room;
+	}
+}

@@ -8,9 +8,6 @@ if shot_key && cooldown <= 0 and !global.modo_inventario && arma_ativa.ammo> 0{
 	arma_ativa.ammo--;
 	var a = instance_create_layer(x, y, "Balas", obj_bullet, {direction: image_angle + random_range(-global.spread,global.spread), speed: global.bulletsp})
 	audio_play_sound(snd_shot, 0, false, , , random_range(.9, 1.1));
-	var _reverb = audio_effect_create(AudioEffectType.Reverb1)
-	_reverb.mix = .2
-	audio_bus_main.effects[0] = _reverb
 	recoil = arma_ativa.recoil
 	cooldown = arma_ativa.cadencia;
 	if instance_exists(a) a.damage = arma_ativa.dmg;

@@ -2,14 +2,17 @@ depth = -y;
 
 //	Input
 
-var _spd_real = point_distance(x,y,x+spd.x,y+spd.y)
-
-
+var _spd_real = point_distance(x,y,x+spd.x,y+spd.y);
 
 if (_spd_real > .5 )
 {
 	if ((y - mouse_y) <= 0) sprite_index = spr_player_fwd_walking;
 	else sprite_index = spr_player_back_walking;
+	
+	if ((current_time mod 250) <= 17){
+		audio_stop_sound(snd_footstep);
+		audio_play_sound(snd_footstep, 0, 0, .5 , , 1 + random_amp(.5));
+	}
 	
 	if (random(4) < 1)
 	{

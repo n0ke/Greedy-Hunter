@@ -77,5 +77,5 @@ draw_text_color(
 	c_green,
 	#ffffff,
 	#ffffff,
-	abs(lengthdir_x(1, current_time * .25))
+	abs(lengthdir_x(1, current_time * .25)) * ((current_time - created) > 1000)
 );

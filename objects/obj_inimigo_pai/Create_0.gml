@@ -45,7 +45,7 @@ tomei_hit = false;
 
 corpo_a_corpo = false;
 
-iniciar_ia = 5;
+iniciar_ia = 60;
 step = false;
 
 escudo = false;

@@ -11,6 +11,11 @@ global.spread = 8;
 
 global.bulletsp = 30;
 
+global.dungeon = 0;
+
+global.nextroom = -1;
+global.transval = 0;
+
 ammo = 90;
 
 function weapon(_nome, _recoil, _dmg, _cadencia, _projetil, _length, _sprite, _ammo, _cdreload, _knockback) constructor{
