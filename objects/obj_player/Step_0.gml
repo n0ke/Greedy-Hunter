@@ -72,4 +72,4 @@ pony_r += pony_spd;
 
 _weapon.depth = depth + sign(y - mouse_y);
 
-if (vida <= 0) instance_create_depth(0, 0, 0, obj_gameover, {reason: "Você morreu"});
+if (global.shotgun.ammo <= 0) instance_create_depth(0, 0, 0, obj_gameover, {reason: "Você faliu"});

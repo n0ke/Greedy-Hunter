@@ -19,14 +19,25 @@ scene = [
 				1
 			);
 		},
-		text: "Você é uma aventureira que mata inimigos para coletar itens valiosos e vendê-los por moedas (munições)",
+		text: "Você é uma aventureira que mata inimigos para coletar itens valiosos e vendê-los por moedas (munições), só não venda muito caro...",
 	},
 	
 	{	//	2
 		title: "Fique mais forte!",
 		visual: function(_x, _y){
+			draw_sprite(spr_upgrades, 0, _x - 96, _y + 32);
+			draw_sprite(spr_upgrades, 1, _x, _y + 32);
+			draw_sprite(spr_upgrades, 2, _x + 96, _y + 32);
 		},
 		text: "Use as moedas para fazer upgrades e se tornar mais poderoso. Cuidado para não ficar sem dinheiro!!",
+	},
+	
+	{	//	2
+		title: "",
+		visual: function(_x, _y){
+			draw_outline(_x, _y - 32, "Você está pronto?", 3, 3, 0, 2);
+		},
+		text: "Segure a barra de espaço para continuar...",
 	},
 	
 ];

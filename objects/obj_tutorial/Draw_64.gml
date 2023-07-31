@@ -1,15 +1,17 @@
 /// @description Tutorial Display
 
+draw_sprite(spr_card, 0, display_get_gui_width() * .5, display_get_gui_height() * .5);
+
 //	Setup
 draw_set_halign(fa_center);
 draw_set_font(fnt_geral);
 
 //	Título
-draw_text_transformed_color(display_get_gui_width() * .5 + 5, display_get_gui_height() * .095 + 3, "TUTORIAL", 3, 3, 0, $0, $0, $0, $0, 1);
-draw_text_transformed_color(display_get_gui_width() * .5 + 5, display_get_gui_height() * .095, "TUTORIAL", 3, 3, 0, $284CE6, $284CE6, $284CE6, $284CE6, 1);
+draw_sprite_ext(spr_title, 0, display_get_gui_width() * .5 + 3, display_get_gui_height() * .17 + 3, .33, .33, 0, #000000, 1);
+draw_sprite_ext(spr_title, 0, display_get_gui_width() * .5, display_get_gui_height() * .17, .33, .33, 0, #ffffff, 1);
 
 //	Título da "cena"
-draw_outline(display_get_gui_width() * .5 + content_x, display_get_gui_height() * .27, scene[scene_index].title, 2, 2, 0, 2);
+draw_outline(display_get_gui_width() * .5 + content_x, display_get_gui_height() * .3, scene[scene_index].title, 2, 2, 0, 2);
 //draw_text_ext_transformed_color(display_get_gui_width() * .5 + content_x, display_get_gui_height() * .27, scene[scene_index].title, 22, display_get_gui_width() * .66, 2, 2, 0, #ffffff, #ffffff, #ffffff, #ffffff, 1);
 
 //	Visual da "cena"

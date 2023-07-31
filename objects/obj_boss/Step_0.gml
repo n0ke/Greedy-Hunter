@@ -1,6 +1,8 @@
 var _atk = false;
 if (sprite_index == spr_attk) and (image_index == image_number - 1) _atk = true;
 
+if vida <= 0 instance_create_depth(x, y, depth, obj_xablau);
+
 event_inherited();
 
 x += velh;

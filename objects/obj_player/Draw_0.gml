@@ -25,4 +25,12 @@ draw_sprite_ext(
 
 if (y - mouse_y) > 0 ponytail();
 
-
+if distance_to_object(obj_pedestal) < 32 or distance_to_object(obj_upgrade) < 32 or distance_to_object(obj_item) < 32{
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+	draw_set_alpha(abs(lengthdir_x(1, current_time * .33)));
+	draw_outline(x, y - 42, "Pressione 'E'", , , 0 ,1);
+	draw_set_alpha(1);
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+}

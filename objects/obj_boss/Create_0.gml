@@ -1,4 +1,5 @@
 
+
 event_inherited();
 
 vida = 500;

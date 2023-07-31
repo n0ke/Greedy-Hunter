@@ -16,9 +16,10 @@ if (instance_exists(obj_player))
 	//draw_sprite_ext(spr_health,0,11,20, ((obj_player.vida/obj_player.vida_max)*5.5),1,0,-1,1);
 	
 	draw_set_halign(fa_right)
+	draw_set_valign(fa_top);
 	draw_set_font(fnt_geral)
-	draw_outline(15, 5,obj_weapon.arma_ativa.ammo,,,0,1)
-	draw_sprite(spr_coin,get_timer()/100000,20, 12)
+	draw_outline(25, 5,obj_weapon.arma_ativa.ammo,,,0,1)
+	draw_sprite(spr_coin,get_timer()/100000,30, 12)
 	
 	draw_set_halign(fa_right);
 	draw_outline(_gui_width - 5, 5, $"Dungeon: {global.dungeon}", , , 0, 1);

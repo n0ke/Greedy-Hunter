@@ -101,6 +101,14 @@ global.itemDB = [
 		price: 10,
 		price_df: 10
 	},
+	{	//	Estatueta
+		drop_image: spr_bolinha,
+		display_image: spr_bolona,
+		name: "bolinha",
+		description: "parece familiar...",
+		price: 1,
+		price_df: 1
+	},
 ]
 
 global.mini_font = font_add_sprite_ext(spr_minifont, "!?AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz1234567890:.,|/$%-+()_'@<>", true, 1);
